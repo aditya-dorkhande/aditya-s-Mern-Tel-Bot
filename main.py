@@ -94,15 +94,10 @@ def handle_callback(call):
             "Day-2",
             url="https://drive.google.com/drive/folders/1LGpS1ME7h4-8zl66VTgvQ3aY3CsqNvfj?usp=sharing"
         )
-        day3_button = types.InlineKeyboardButton(
-            "Day-3",
-            url="https://drive.google.com/drive/folders/14_2zTKH5lR7npGEUWK8Gu2exugct8HgH?usp=sharing"
-        )
         next_button = types.InlineKeyboardButton("Next", callback_data="next_step")
 
         markup.add(day1_button)
         markup.add(day2_button)
-        markup.add(day3_button)
         markup.add(next_button)
 
         bot.send_message(
